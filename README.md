@@ -52,7 +52,7 @@ Primero clona el repositorio:
 
 ### Backend
 
-1. Navega al directorio del backend:
+1. Navega al directorio del backend en la terminal:
    ```bash
    cd trip-track/triptrack_backend
    ```
@@ -67,19 +67,21 @@ Primero clona el repositorio:
 
 ### Frontend
 
-1. Navega al directorio del frontend:
+1. Navega al directorio del frontend desde otro terminal:
    ```bash
-   cd ../triptrack_frontend
+   cd trip-track/triptrack_frontend
    ```
 2. Instala las dependencias:
    ```bash
    npm install
    ```
+ 3. Construye la aplicación con Node:
+    ```bash
+     npm run build
+    ```
 3. Ejecuta la aplicación:
    ```bash
-   npm run build
    npm run install
    ```
-
 
 La aplicación estará disponible en http://localhost:3000
