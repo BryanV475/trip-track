@@ -6,6 +6,10 @@ La aplicación está dividida en dos partes:
 1. Backend desarrollado con **Spring Boot** 
 2. Frontend desarrollado con **React** usando el Framework Next.js.
 
+## Entorno de desarrollo
+
+![image](https://github.com/user-attachments/assets/48584451-769b-45d1-a0cd-d980886873e3)
+
 ## Estructura del Proyecto
 
 ## Backend
