@@ -51,7 +51,7 @@ Primero clona el repositorio:
    ```
 Navega al directorio del proyecto:
    ```bash
-   git clone https://github.com/BryanV475/trip-track
+   cd trip-track
    ```
 
 ### Backend
