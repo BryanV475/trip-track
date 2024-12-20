@@ -108,8 +108,8 @@ La aplicación estará disponible en http://localhost:3000
 - **Aprobación de Viáticos**: Permite aprobar viáticos.
 
 ### Frontend
-- **Gestión de Viáticos**: Interfaz para que los usuarios puedan crear, actualizar y eliminar viáticos.
-- **Panel de Aprobación**: Interfaz para que los usuarios puedan aprobar o rechazar viáticos.
+- **Gestión de Viáticos**: Interfaz para que los usuarios puedan crear y actualizar.
+- **Panel de Aprobación**: Interfaz para que los usuarios puedan aprobar viáticos.
 
 ## Consideraciones
 
