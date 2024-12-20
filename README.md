@@ -127,7 +127,7 @@ El ingreso de información debe tener las siguientes secciones:
 ### Aprobación de los viáticos
 La aprobación de un viático debe tener las siguientes secciones:
 1. El nombre de quien aprueba el viático
-2. La identificación de quien aprueba el viático
+2. La identificación de quien aprueba el viático (cédula o pasaporte)
 3. El email de quien aprueba el viático
 
 ## Información sobre el Proyecto
