@@ -134,7 +134,7 @@ La aprobación de un viático debe tener las siguientes secciones:
 
 ### Diagrama Entidad-Relación
 
-![Diagrama](https://github.com/user-attachments/assets/b0976106-d8e4-4e30-8781-4e879b86c134)
+![Diagram](https://github.com/user-attachments/assets/b0976106-d8e4-4e30-8781-4e879b86c134)
 
 ### Endpoints
 
