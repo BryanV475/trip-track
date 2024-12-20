@@ -49,16 +49,12 @@ Primero clona el repositorio:
    ```bash
    git clone https://github.com/BryanV475/trip-track
    ```
-Navega al directorio del proyecto:
-   ```bash
-   cd trip-track
-   ```
 
 ### Backend
 
 1. Navega al directorio del backend:
    ```bash
-   cd trip-track/backend
+   cd trip-track/triptrack_backend
    ```
 2. Construye el proyecto con Maven:
    ```bash
@@ -73,7 +69,7 @@ Navega al directorio del proyecto:
 
 1. Navega al directorio del frontend:
    ```bash
-   cd ../frontend
+   cd ../triptrack_frontend
    ```
 2. Instala las dependencias:
    ```bash
