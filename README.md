@@ -2,9 +2,25 @@
 
 TripTrack es una aplicación para la gestión y aprobación de viáticos incurridos en viajes nacionales o internacionales.
 
-La aplicación está dividida en dos partes: 
-1. Backend desarrollado con **Spring Boot** 
-2. Frontend desarrollado con **React** usando el Framework Next.js.
+## Índice
+1. [Entorno de desarrollo](#entorno-de-desarrollo)
+2. [Estructura del Proyecto](#estructura-del-proyecto)
+   - [Backend](#backend)
+     - [Dependencias](#dependencias)
+   - [Frontend](#frontend)
+     - [Dependencias](#dependencias-1)
+3. [Instrucciones de Despliegue](#instrucciones-de-despliegue)
+   - [Backend](#backend-1)
+   - [Frontend](#frontend-1)
+4. [Funcionalidades](#funcionalidades)
+   - [Backend](#backend-2)
+   - [Frontend](#frontend-2)
+5. [Consideraciones](#consideraciones)
+   - [Ingreso de información de viáticos](#ingreso-de-información-de-viáticos)
+   - [Aprobación de los viáticos](#aprobación-de-los-viáticos)
+6. [Información sobre el Proyecto](#información-sobre-el-proyecto)
+   - [Diagrama Entidad-Relación](#diagrama-entidad-relación)
+   - [Endpoints](#endpoints)
 
 ## Entorno de desarrollo
 - Java
@@ -16,7 +32,7 @@ La aplicación está dividida en dos partes:
    ```bash
    v22.12.0
    ```
-   
+
 ## Estructura del Proyecto
 
 ## Backend
@@ -32,7 +48,7 @@ Las principales dependencias utilizadas en el backend son:
 - H2 Database
 - Lombok
 
-# Frontend
+## Frontend
 El frontend está desarrollado con el Next.js y proporciona una interfaz de usuario para gestionar y aprobar viáticos.
 
 ### Dependencias
@@ -43,7 +59,7 @@ Las principales dependencias utilizadas en el frontend son:
 - Axios
 - Tailwind CSS
 
-# Instrucciones de Despliegue
+## Instrucciones de Despliegue
 
 Primero clona el repositorio:
    ```bash
@@ -83,9 +99,81 @@ Primero clona el repositorio:
    ```bash
    npm run install
    ```
-
-# Diagrama de Clases
-
-![Untitled](https://github.com/user-attachments/assets/b0976106-d8e4-4e30-8781-4e879b86c134)
-
 La aplicación estará disponible en http://localhost:3000
+
+## Funcionalidades
+
+### Backend
+- **Gestión de Viáticos**: Permite crear, actualizar y listar viáticos.
+- **Aprobación de Viáticos**: Permite aprobar viáticos.
+
+### Frontend
+- **Gestión de Viáticos**: Interfaz para que los usuarios puedan crear, actualizar y eliminar viáticos.
+- **Panel de Aprobación**: Interfaz para que los usuarios puedan aprobar o rechazar viáticos.
+
+## Consideraciones
+
+### Ingreso de información de viáticos
+El ingreso de información debe tener las siguientes secciones:
+2. Nombre de la persona que ingresa el viático
+3. Identificación de la persona que ingresa el viático (cédula o pasaporte)
+1. Fecha de registro del viático
+3. Motivo del viaje
+4. Nombre del cliente o proyecto
+5. Tipo de viaje (nacional o internacional)
+5. Fecha del viaje (en caso de viáticos internacionales)
+6. Fecha de invitación (en caso de viáticos nacionales)
+
+### Aprobación de los viáticos
+La aprobación de un viático debe tener las siguientes secciones:
+1. El nombre de quien aprueba el viático
+2. La identificación de quien aprueba el viático
+3. El email de quien aprueba el viático
+
+## Información sobre el Proyecto
+
+### Diagrama Entidad-Relación
+
+![Diagrama](https://github.com/user-attachments/assets/b0976106-d8e4-4e30-8781-4e879b86c134)
+
+### Endpoints
+
+- **Obtener todos los viáticos**
+  - **URL**: `/api/expenses`
+  - **Método**: `GET`
+  - **Descripción**: Obtiene una lista de todos los viáticos.
+
+- **Obtener un viático por ID**
+  - **URL**: `/api/expenses/{id}`
+  - **Método**: `GET`
+  - **Descripción**: Obtiene un viático por su ID.
+
+- **Obtener viáticos por estado**
+  - **URL**: `/api/expenses/status/{status}`
+  - **Método**: `GET`
+  - **Descripción**: Obtiene una lista de viáticos por su estado.
+
+- **Obtener viáticos por autor**
+  - **URL**: `/api/expenses/author/{authorId}`
+  - **Método**: `GET`
+  - **Descripción**: Obtiene una lista de viáticos por el ID del autor.
+
+- **Crear un nuevo viático**
+  - **URL**: `/api/expenses`
+  - **Método**: `POST`
+  - **Descripción**: Crea un nuevo viático.
+
+- **Actualizar un viático**
+  - **URL**: `/api/expenses/{id}`
+  - **Método**: `PUT`
+  - **Descripción**: Actualiza un viático existente.
+
+- **Obtener aprobación por ID de viático**
+  - **URL**: `/api/approvals/expense/{expenseId}`
+  - **Método**: `GET`
+  - **Descripción**: Obtiene la aprobación de un viático por su ID.
+
+- **Crear una aprobación para un viático**
+  - **URL**: `/api/approvals/expense/{expenseId}`
+  - **Método**: `POST`
+  - **Descripción**: Crea una aprobación para un viático.
