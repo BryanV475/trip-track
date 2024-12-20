@@ -49,6 +49,11 @@ Primero clona el repositorio:
    ```bash
    git clone https://github.com/BryanV475/trip-track
    ```
+Navega al directorio del proyecto:
+   ```bash
+   git clone https://github.com/BryanV475/trip-track
+   ```
+
 ### Backend
 
 1. Navega al directorio del backend:
