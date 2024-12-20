@@ -43,7 +43,7 @@ Las principales dependencias utilizadas en el frontend son:
 - Axios
 - Tailwind CSS
 
-## Instrucciones de Despliegue
+# Instrucciones de Despliegue
 
 Primero clona el repositorio:
    ```bash
@@ -83,5 +83,9 @@ Primero clona el repositorio:
    ```bash
    npm run install
    ```
+
+# Diagrama de Clases
+
+<iframe width="560" height="315" src='https://dbdiagram.io/e/6765e8d0fc29fb2b3b03edb0/6765e8d5fc29fb2b3b03ee05'> </iframe>
 
 La aplicación estará disponible en http://localhost:3000
