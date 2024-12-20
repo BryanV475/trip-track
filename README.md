@@ -86,6 +86,6 @@ Primero clona el repositorio:
 
 # Diagrama de Clases
 
-<iframe width="560" height="315" src='https://dbdiagram.io/e/6765e8d0fc29fb2b3b03edb0/6765e8d5fc29fb2b3b03ee05'> </iframe>
+![Untitled](https://github.com/user-attachments/assets/b0976106-d8e4-4e30-8781-4e879b86c134)
 
 La aplicación estará disponible en http://localhost:3000
